@@ -21,10 +21,10 @@ export default function Hero() {
   })
 
   const sampleImages = [
-    { src: '/placeholder.svg', alt: 'Sample 1' },
-    { src: '/placeholder.svg', alt: 'Sample 2' },
-    { src: '/placeholder.svg', alt: 'Sample 3' },
-    { src: '/placeholder.svg', alt: 'Sample 4' },
+    { src: '/avatar_1.jpg', alt: 'Sample 1' },
+    { src: '/avatar_2.jpg', alt: 'Sample 2' },
+    { src: '/avatar_3.jpg', alt: 'Sample 3' },
+    { src: '/avatar_4.jpg', alt: 'Sample 4' },
   ]
 
   return (
@@ -32,16 +32,16 @@ export default function Hero() {
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50 to-white" />
       
-      <div className="relative container mx-auto px-4 py-20 sm:py-32">
+      <div className="relative container mx-auto px-4 py-20 sm:py-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content Side */}
           <div className="space-y-8">
             <div className="space-y-6">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
                 Remove Image Background{' '}
                 <span className="inline-flex items-center">
                   With AI
-                  <Sparkles className="w-8 h-8 ml-2 text-blue-500" />
+                  <Sparkles className="w-8 h-8 ml-2 text-purple-500" />
                 </span>
               </h1>
               <p className="text-xl text-gray-600">
@@ -56,29 +56,28 @@ export default function Hero() {
             <div
               {...getRootProps()}
               className={`
-                relative p-8 rounded-xl border-2 border-dashed transition-all
+                relative p-4 rounded-2xl border-2 border-dashed cursor-pointer transition-all max-w-[400px]
                 ${dragActive 
-                  ? 'border-blue-500 bg-blue-50' 
-                  : 'border-gray-300 hover:border-blue-500 bg-white'
+                  ? 'border-purple-500 bg-purple-50' 
+                  : 'border-gray-300 hover:purple-50 hover:border-purple-500 bg-inherit'
                 }
               `}
             >
               <input {...getInputProps()} />
               <div className="flex flex-col items-center space-y-4">
-                <div className="p-4 bg-blue-100 rounded-full">
-                  <Upload className="w-8 h-8 text-blue-600" />
-                </div>
-                <div className="text-center">
-                  <p className="text-lg font-medium text-gray-900">
+                <div className="p-2 pr-7 bg-purple-500 rounded-full flex items-center gap-2">
+                  <Upload  className="w-10 h-10 text-white rounded-full p-3  bg-purple-700" />
+                  <p className=" font-semibold text-gray-100">
                     Upload Image
                   </p>
+                </div>
+                <div className="text-center">
+                 
                   <p className="text-sm text-gray-500">
                     or drag and drop, paste image or URL
                   </p>
                 </div>
-                <Button className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600">
-                  Choose a Photo
-                </Button>
+            
               </div>
             </div>
 
@@ -108,14 +107,14 @@ export default function Hero() {
             {/* Checkerboard pattern for transparency */}
             <div className="absolute inset-0 bg-[url('/checkerboard.png')] bg-repeat rounded-2xl overflow-hidden">
               <Image
-                src="/placeholder.svg"
+                src="/HeroA.jpeg"
                 alt="Example of background removal"
                 fill
                 className="object-contain"
               />
             </div>
             {/* Decorative elements */}
-            <div className="absolute -top-4 -right-4 w-12 h-12 text-blue-500">
+            <div className="absolute -top-4 -right-4 w-12 h-12 text-purple-500">
               <Sparkles className="w-full h-full" />
             </div>
             <div className="absolute -bottom-4 -left-4 w-8 h-8 text-purple-500 transform rotate-45">
@@ -127,9 +126,9 @@ export default function Hero() {
         {/* Terms of Service */}
         <div className="mt-8 text-center text-sm text-gray-500">
           By uploading an image, you agree to our{' '}
-          <a href="#" className="text-blue-500 hover:underline">Terms of Service</a>
+          <a href="#" className="text-purple-500 hover:underline">Terms of Service</a>
           {' '}and{' '}
-          <a href="#" className="text-blue-500 hover:underline">Privacy Policy</a>
+          <a href="#" className="text-purple-500 hover:underline">Privacy Policy</a>
         </div>
       </div>
     </section>

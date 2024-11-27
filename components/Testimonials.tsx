@@ -5,19 +5,19 @@ const testimonials = [
     quote: "This tool has saved me countless hours of work. The results are amazing!",
     author: "Sarah Johnson",
     role: "Graphic Designer",
-    avatar: "/placeholder.svg"
+    avatar: "/avatar_1.jpg"
   },
   {
     quote: "We've integrated this into our e-commerce workflow and it's been a game-changer.",
     author: "Michael Chen",
     role: "E-commerce Manager",
-    avatar: "/placeholder.svg"
+    avatar: "/avatar_6.jpg"
   },
   {
     quote: "The API is super easy to use and the results are consistently great.",
     author: "Emily Rodriguez",
     role: "Software Developer",
-    avatar: "/placeholder.svg"
+    avatar: "/avatar_5.jpg"
   }
 ]
 
@@ -34,9 +34,10 @@ export default function Testimonials() {
                 <Image
                   src={testimonial.avatar}
                   alt={testimonial.author}
+                  objectFit="cover"
                   width={48}
                   height={48}
-                  className="rounded-full mr-4"
+                  className="rounded-full mr-4 object-cover"
                 />
                 <div>
                   <p className="font-semibold">{testimonial.author}</p>

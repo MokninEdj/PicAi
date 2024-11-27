@@ -26,8 +26,9 @@ export default function Pricing() {
         <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-12">Choose Your Plan</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {plans.map((plan, index) => (
-            <div key={index} className="bg-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">{plan.name}</h3>
+            <div key={index} className="bg-white flex flex-col justify-between p-8 rounded-lg shadow-lg">
+             <div>
+             <h3 className="text-2xl font-bold text-gray-900 mb-4">{plan.name}</h3>
               <p className="text-4xl font-bold text-purple-600 mb-6">{plan.price}<span className="text-base font-normal text-gray-600">/month</span></p>
               <ul className="mb-8">
                 {plan.features.map((feature, featureIndex) => (
@@ -37,6 +38,7 @@ export default function Pricing() {
                   </li>
                 ))}
               </ul>
+             </div>
               <Button className="w-full">{plan.name === 'Enterprise' ? 'Contact Us' : 'Get Started'}</Button>
             </div>
           ))}

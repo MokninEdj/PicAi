@@ -13,25 +13,25 @@ const tools: Tool[] = [
   {
     title: 'AI Backgrounds',
     description: 'Generate realistic backgrounds in less than a second',
-    image: '/placeholder.svg',
+    image: '/generateBackAi.webp',
     href: '#'
   },
   {
     title: 'Add white background',
     description: 'Add a white background behind your subject automatically',
-    image: '/placeholder.svg',
+    image: '/whiteBackAi.webp',
     href: '#'
   },
   {
     title: 'Blur background',
     description: 'Blur the background of your image automatically',
-    image: '/placeholder.svg',
+    image: '/blurAi.webp',
     href: '#'
   },
   {
     title: 'AI Retouch',
     description: 'Remove unwanted parts of your image with a swipe',
-    image: '/placeholder.svg',
+    image: '/retouch.webp',
     href: '#'
   }
 ]

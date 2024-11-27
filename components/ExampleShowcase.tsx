@@ -47,9 +47,9 @@ export default function ExampleShowcase() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
           {/* Original Image */}
           <div className="bg-gray-100 rounded-2xl p-4">
-            <div className="aspect-square relative rounded-xl overflow-hidden">
+            <div className="w-full h-96 relative rounded-xl overflow-hidden">
               <Image
-                src="/placeholder.svg"
+                src="/original.jpg"
                 alt="Original image"
                 fill
                 className="object-cover"
@@ -60,9 +60,9 @@ export default function ExampleShowcase() {
 
           {/* Transparent Background */}
           <div className="bg-[url('/checkerboard.png')] bg-repeat rounded-2xl p-4">
-            <div className="aspect-square relative rounded-xl overflow-hidden">
+            <div className="w-full h-96 relative rounded-xl overflow-hidden">
               <Image
-                src="/placeholder.svg"
+                src="/transparent.jpg"
                 alt="Image with transparent background"
                 fill
                 className="object-cover"
@@ -75,9 +75,9 @@ export default function ExampleShowcase() {
 
           {/* New Background */}
           <div className="bg-gradient-to-b from-purple-100 to-purple-50 rounded-2xl p-4">
-            <div className="aspect-square relative rounded-xl overflow-hidden">
+            <div className="w-full h-96 relative rounded-xl overflow-hidden">
               <Image
-                src="/placeholder.svg"
+                src="/newBackground.png"
                 alt="Image with new background"
                 fill
                 className="object-cover"
@@ -87,12 +87,12 @@ export default function ExampleShowcase() {
           </div>
 
           {/* Multiple Variations */}
-          <div className="bg-gray-100 rounded-2xl p-4">
-            <div className="grid grid-cols-2 gap-2">
+          <div className="bg-gray-100 rounded-2xl p-4 h-[410px] ">
+            <div className="grid grid-cols-2 gap-2 h-full">
               {[1, 2, 3, 4].map((i) => (
-                <div key={i} className="aspect-square relative rounded-lg overflow-hidden">
+                <div key={i} className="w-full h-full  relative rounded-lg overflow-hidden">
                   <Image
-                    src="/placeholder.svg"
+                    src="/endless.jpg"
                     alt={`Variation ${i}`}
                     fill
                     className="object-cover"
@@ -100,7 +100,7 @@ export default function ExampleShowcase() {
                 </div>
               ))}
             </div>
-            <p className="text-center mt-4 text-gray-600 font-medium">Endless possibilities</p>
+            <p className="text-center mt-8 text-gray-600 font-medium">Endless possibilities</p>
           </div>
         </div>
       </div>
