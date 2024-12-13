@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 export default function FastBackgroundEraser() {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8">
-      <div className="container mx-auto">
+      <div className="mx-auto px-4 max-w-7xl md:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Image Side */}
           <div className="relative">

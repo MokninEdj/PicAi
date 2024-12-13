@@ -18,7 +18,7 @@ export default function ExampleShowcase() {
 
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-      <div className="container mx-auto">
+      <div className="mx-auto px-4 max-w-7xl md:px-8">
         <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-4">
           Just Picture It!
         </h2>

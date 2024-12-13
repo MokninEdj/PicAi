@@ -32,7 +32,7 @@ export default function Hero() {
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50 to-white" />
       
-      <div className="relative container mx-auto px-4 py-20 sm:py-16">
+      <div className="relative mx-auto max-w-7xl px-4 md:px-8 py-20 sm:py-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content Side */}
           <div className="space-y-8">

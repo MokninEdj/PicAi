@@ -44,10 +44,10 @@ export default function BlogAndUpdates() {
 
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8">
-      <div className="container mx-auto">
+      <div className="mx-auto px-4 max-w-7xl md:px-8">
         {/* Blog Section */}
-        <div className="mb-20">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+        <div className="mb-10">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-6">
             Background Eraser Related Posts
           </h2>
 
@@ -84,7 +84,8 @@ export default function BlogAndUpdates() {
           </div>
         </div>
 
-        {/* Updates Section */}
+
+        {/* 
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-br from-purple-600 to-blue-600 rounded-3xl shadow-xl p-8 md:p-12 overflow-hidden relative">
             <div className="absolute inset-0 bg-grid-white/[0.2] -z-1"></div>
@@ -122,7 +123,7 @@ export default function BlogAndUpdates() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   )

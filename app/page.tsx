@@ -15,6 +15,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
+     
       <ExampleShowcase />
       <HowItWorks />
       <FastBackgroundEraser />

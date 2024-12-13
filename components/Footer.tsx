@@ -63,6 +63,7 @@ const socialLinks = [
 export default function Footer() {
   return (
     <footer className="relative bg-gray-900 text-white">
+      <div className='max-w-7xl mx-auto px-4 md:px-8'>
       {/* Wave Separator */}
       <div className="absolute top-0 left-0 right-0 h-16 overflow-hidden">
         <svg
@@ -144,6 +145,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </footer>
   )
