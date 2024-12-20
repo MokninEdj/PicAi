@@ -84,7 +84,7 @@ export default function Footer() {
         <div className="flex justify-center mb-16">
           <div className="bg-gray-800 rounded-lg p-4 text-center">
             <div className="flex items-center justify-center mb-2">
-              <img src="/placeholder.svg" alt="Product Hunt" className="h-6 mr-2" />
+              <img src="/productHunt.png" alt="Product Hunt" className="h-6 mr-2" />
               <span className="text-white font-semibold">PRODUCT HUNT</span>
             </div>
             <div className="flex justify-center text-yellow-400 mb-1">
@@ -116,7 +116,7 @@ export default function Footer() {
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex items-center space-x-4">
-              <Button variant="outline" className="text-gray-300 hover:text-white border-gray-700">
+              <Button variant="secondary" className=" border-gray-700">
                 English
               </Button>
             </div>

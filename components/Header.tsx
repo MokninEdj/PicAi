@@ -7,9 +7,9 @@ export default function Header() {
   
     <header className="w-full py-4">
       <div className="mx-auto px-4 max-w-7xl md:px-8 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold text-purple-600 flex gap-1 items-center">
+        <Link href="/" className="text-xl font-mono font-bold text-purple-600 flex gap-1 items-center">
           <Image
-            src="/logo.png"
+            src="/goprod.png"
             alt="Logo"
             width={35}
             height={35}
@@ -17,7 +17,7 @@ export default function Header() {
           />
          PicAi
         </Link>
-        <nav className="hidden md:flex space-x-8">
+        <nav className="hidden md:flex space-x-8 text-sm">
           <Link href="#how-it-works" className="text-gray-600 hover:text-purple-600">
             How It Works
           </Link>
